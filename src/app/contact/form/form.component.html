@@ -1,0 +1,23 @@
+    <h2>Escríbenos</h2>
+    <form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre" [(ngModel)]="contacto.nombre">
+      </div>
+      <div class="mb-3">
+        <label for="apellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido" [(ngModel)]="contacto.apellido">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="correo" placeholder="Correo" name="correo" [(ngModel)]="contacto.correo">
+      </div>
+      <div class="mb-3">
+        <label for="asunto" class="form-label">Asunto</label>
+        <input type="text" class="form-control" id="asunto" placeholder="Asunto" name="asunto" [(ngModel)]="contacto.asunto">
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensaje" [(ngModel)]="contacto.mensaje"></textarea>
+      </div>
+    </form>
